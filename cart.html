@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="cart">
+
+  <div class="container mt-5">
+    <div class="text-center mt-4 d-flex justify-content-between">
+      <h2 class="mb-4">Shopping Cart</h2>
+      <a href="logout.html" class="btn btn-danger text-center">Logout</a>
+    </div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Image</th>
+          <th scope="col">Name</th>
+          <th scope="col">Price</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody id="cartItems">
+        <!-- المنتجات ستُضاف هنا -->
+      </tbody>
+    </table>
+    <div class="text-end">
+      <h5 id="totalPrice">Total Price: $0</h5>
+      <button class="btn btn-danger" onclick="clearCart()">Clear Cart</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>
+
+
+
+
+ 
